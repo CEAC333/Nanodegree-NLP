@@ -6,6 +6,29 @@
 
 #### Welcome
 
+- Luis Serrano - Curriculum Leader at the School of Artificial Intelligence at Udacity
+
+Natural Language Processing is one of the most exciting and fastest growing applications in Machine Learning
+
+Part 1:
+
+- The Basics of Language Processing and some very interesting Probabilistic Algorithms
+- Project - Building a Model for Part of Speech Tagging using Hidden Markov Models
+
+Part 2:
+
+- Go deeper into some of the most exciting Deep Learning Based Language Models
+- Project - Building a Machine Translation Model using Deep Neural Networks
+
+Part 3:
+
+- Speech Recognition and Voice User Interface
+- Project - End-to-End Speech Recognition Model using Deep Neural Networks
+
+- Arpan Chakraborty - Computer Vision & Machine Learning at Georgia Tech and Udacity
+- Jay Alamar - Computer Scientist & Investment Principle with a very popular Machine Learning Blog
+- Dana Sheahen - Electrical Engineer with a Master's in Computer Science and a love for all AI things 
+
 #### Deadline Policy
 
 This program is project-based, and each project has a suggested deadline to keep students on pace towards graduation. In addition to the suggested project deadlines, each class has a **term end deadline**, by which date all required projects must be passed in order to successfully complete the course and receive a certificate.
