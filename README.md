@@ -25,6 +25,8 @@ Part 3:
 - Speech Recognition and Voice User Interface
 - Project - End-to-End Speech Recognition Model using Deep Neural Networks
 
+Collaborators:
+
 - Arpan Chakraborty - Computer Vision & Machine Learning at Georgia Tech and Udacity
 - Jay Alamar - Computer Scientist & Investment Principle with a very popular Machine Learning Blog
 - Dana Sheahen - Electrical Engineer with a Master's in Computer Science and a love for all AI things 
