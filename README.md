@@ -36,13 +36,15 @@ We highly recommend adding these suggested deadlines to your calendar to stay on
 | Part of Speech Tagging |	Sep 4 |
 | Machine Translation |	Oct 6 |
 | DNN Speech Recognizer |	Oct 27 |
-| Term End Deadline |	Nov 10 |
+| **Term End Deadline** |	Nov 10 |
 
 We highly recommend adding these suggested deadlines to your calendar to stay on track. You can do this in two ways:
 
-Download this Suggested Project Deadlines ICS file and import it into any calendar of your preference.
-Open up this Suggested Project Deadlines Google Calendar, and click the + button in the bottom right corner.
-July Class
+Download this Suggested Project Deadlines ICS file and import it into any calendar of your preference. - https://calendar.google.com/calendar/ical/knowlabs.com_2spt5fjca10ko88q0lnibmrkvs%40group.calendar.google.com/public/basic.ics
+Open up this Suggested Project Deadlines Google Calendar, and click the + button in the bottom right corner. - http://bit.ly/2OhT6EB
+
+**July Class**
+
 Project	Suggested Deadline
 Term Begins	Jul 10
 Part of Speech Tagging	Jul 31
