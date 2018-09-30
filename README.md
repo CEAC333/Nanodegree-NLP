@@ -314,6 +314,17 @@ These languages are designed to be as unambiguous as possible and are suitable f
 
 #### Grammar
 
+Structured languages are easy to parse and understand for computer because they are defined by a strict set of rules or grammar.
+There are standard forms of expressing such grammars and algorithms that can parse properly formed statements to understand exactly what is meant.
+
+When a statement doesn't match the prescribed grammar, a typical computer doesn't try to guess the meaning; it simply gives up
+Such violations of grammatical rules are reported as syntax errors
+
+```
+>>> say hello
+SyntaxError: invalid syntax
+```
+
 #### Unstructured Text
 
 #### Counting Words
