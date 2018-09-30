@@ -228,6 +228,31 @@ https://classroom.udacity.com/nanodegrees/nd892/parts/90059bfe-ada1-4b6b-9225-2f
 
 ### 1.2.- Udacity Support
 
+There are several ways in which you will receive support during the program from Udacity's network of Reviewers, as well as your fellow students.
+
+**Project Reviews**
+
+For any projects you submit, you will receive detailed feedback from a project Reviewer.
+
+These reviews are meant to give you personalized code feedback and to tell you what can be improved in your code (if anything)! This feedback is very like the feedback you would receive working on a small team of engineers. Sometimes, a reviewer might ask you to resubmit a project to meet specifications. In that case, an indication of needed changes will also be provided. Note that you can submit a project as many times as needed to pass.
+
+This feedback is especially useful when building artificially intelligent agents. Sometimes your agents don't always behave as expected -- see the untrained soccer agents below for an example! Your project Reviewer is available to help you figure out how you can change your code, to help your agents master their tasks!
+
+
+**Knowledge**
+
+To ask questions and get answers from Udacity staff and your peers, we have the Knowledge platform. If you have ever used StackOverflow, this platform is similar. You can post new questions here, add answers or conversational comments, and **upvote** questions and answers. You can also **search** for existing answers and filter by Nanodegree program and project. Knowledge is accessible from the classroom as a lightbulb icon that you'll see at the bottom left of your navigation bar.
+
+https://knowledge.udacity.com/?nanodegree=af1412cc-594c-11e8-aa9f-1fd58b4f9291
+
+**Feedback**
+
+In order to keep our content up-to-date and address issues quickly, we've set up a **Waffle board** to track error reports and suggestions.
+
+https://waffle.io/udacity/nlpnd-waffle-issues
+
+If you find an error, check there to see if it has already been filed. If it hasn't, you can file an issue by clicking on the "Add issue" button, adding a title, and entering a description in the details (you will need a GitHub account for this). Links and screenshots, if available, are always appreciated!
+
 ### 1.3.- Intro to NLP
 
 ### 1.4.- Text Processing
