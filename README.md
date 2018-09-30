@@ -255,6 +255,81 @@ If you find an error, check there to see if it has already been filed. If it has
 
 ### 1.3.- Intro to NLP
 
+#### Introducing Arpan
+
+Our first section will be taught by Arpan Chakraborty. Arpan has a Ph.D. in Computer Science and for several years, has taught at Udacity and at Georgia Tech.
+
+Everything in NLP starts with raw text typically, produced by humans.
+This text is first processed using some simple transformations such as:
+
+- Splitting it into individual words
+
+- Reducing verbs to their root form
+
+You need to do this before performing any other analysis or training complex models.
+This stage may sound simple but you have to be careful about how you process your raw text, it may affect the results you obtain further down the line.
+
+#### NLP Overview
+
+Language is an important medium for human communication; it allows us to convey information, express our ideas, and give instructions to others
+
+Some philosophers argue that it enables us to form complex thoughts and reason about them; it may turn to be critical component of human intelligence
+
+Now consider the various artificial systems we interact with every day:
+- phones
+- cars
+- websites
+- coffee machines
+
+It's natural to expect them to be able to process and understand human language, right?
+Yet, computers are still lagging behind. No doubt, we have made some incredible progress in the field of Natural Language Processing; but there is still a long way to go. And that's what makes this an exciting and dynamic area of study
+
+In this lesson you will not only get to know more about the applications and challenges in NLP
+You will learn how to design an intelligent application that uses NLP techniques and deploy it on a scalable platform
+
+#### Structured Languages
+
+What makes it so hard for computers to understand us?
+
+One drawback of human languages, or feature depending on how you look at it, is the lack of a precisely defined structure
+
+To understand how that makes things difficult let's take a look at some languages that are more structured. 
+Mathematics, for instance, uses a structured language. When I write `y = 2x + 5` there is no ambiguity in what I want to convey. I'm saying that the variable `y` is related to the variable `x` as two times `x` plus five
+
+Formal logic also uses a structure language.
+For example, consider the expression `Parent(X, Y) ^ Parent(X, Z) -> Sibling(Y, Z)`
+This statement is asserting that if `X` is parent of `Y` and `X` is parent of `Z` then `Y` and `Z` are siblings
+
+A set of structure languages that may be more familiar to you are scripting and programming languages.
+Consider this SQL statement
+
+```SQL
+SELECT name, emaul
+FROM users
+WHERE name LIKE 'A%' 
+```
+
+We are asking the database to return the names and e-mail addresses of all users whose names begin with an A.
+These languages are designed to be as unambiguous as possible and are suitable for computers to process.
+
+#### Grammar
+
+#### Unstructured Text
+
+#### Counting Words
+
+#### Context Is Everything
+
+#### NLP and Pipelines
+
+#### How NLP Pipelines Work
+
+#### Text Processing
+
+#### Feature Extraction
+
+#### Modeling
+
 ### 1.4.- Text Processing
 
 ### 1.5.- Spam Classifier with Naive Bayes
