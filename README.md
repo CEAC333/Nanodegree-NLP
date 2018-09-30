@@ -177,7 +177,54 @@ If you do not complete the term within the extension period, you will be removed
 
 ## Communication Guidelines
 
+Your experience in the Nanodegree program and community should be an engaging, fulfilling, and positive one. As such, we have outlined the following system for reporting behavior that does not live up to Udacity’s standards, so it can quickly be addressed by our staff.
+
+All reports of suspected violations to the TOU, Community Code of Conduct or Honor Code should be submitted to report@udacity.com and will be reviewed. If you witness or are experiencing any violations of our policies please get in touch with us. Below prohibited actions as set forth on our Community Code of Conduct:
+
+- **Harassment:** Inappropriate, harassing, abusive, discriminatory, derogatory or violent comments or conduct.
+
+- **Discrimination:** Offensive comments related to gender or gender identity, sexual orientation, race, ethnicity, religion, national origin, disability or disease
+
+- **Distributing inappropriate content:** Use of sexual, violent, graphic, or derogatory images
+
+- **Bullying:** Deliberate intimidation, threats of violence or violent language directed against another person
+
+- **Sexual harassment:** Unwelcome sexual attention
+
+- **Defamation:** Obscene, fraudulent, indecent, or libelous acts that defame, abuse, harass, discriminate against or threaten others
+
+- **Plagiarism:** will not cheat on any homework assignment, projects or exams for the Online Courses and, specifically, will not plagiarize materials created by others
+
+- **Self-injury or Suicide:** We do not encourage community postings in Study Groups or Knowledge related to self-injury or suicide. If you or someone you know is exhibiting signs of self-injury or suicide, find help at the Suicide Prevention Lifeline in the U.S. and Befrienders.org globally.
+When a potential violation is brought to our attention, we will make every effort to investigate the case thoroughly and make a decision that is fair to all parties.
+
+Thank you, The Udacity Team
+
+
 ## Lesson Plan - Week 1
+
+![plan_week1](https://lh3.googleusercontent.com/NKShP7rLCzgnUK5vqAE4YDqsILBni_oBUa1MQQbpzkyT906NrkI3nlN5pCCJZT1Rx0Ff5buewnUmLdZZUmopCD6_2PG_l6RtblD2OVQnhjuRk_G8o1Ra3b2OhI7sdT0mUkHlUWw0vSwQJLWwuzDZeJTQnr8uy54SXh089cr5xqwwZuD6CAnlZHacrqtkMlC7723e_m-NUO07RJi0p3ATiZpJyxfNMNHyRIx4u4P55IwQmVGMbBADMon2FdsscIlAY3l9paqsJd_DhKlJKjqq9cbxAkkLulcEJ2rgdKvIiV_CEFgXt5RMrfbMRE8ykvERb55lfEkt26M4bgD2nvj-tploHoF4SqBnhd_PWMOqeB8dvX8KNN8tVFLzlOU88sLdMzR2-P6ct-OuP6jenvu-T8NTqCM1HHXwesGUxH7HTxQ0I72SvmQofDdx7wjB311kQKP0LguYwu7kbJk-bm6By89x2wXHCtXRnLBwiuXPfP5nAxK6Fcg9jPCafhcw1BQbB5HUT11YATNmYJ0gDaPusn3ESsuDkFFJsp0iY7rmYO7NLzXXQGgwh8-hht9ihYStUY2WfshqmzuqUCbu6kzzYNjBQwxRfLxv=w1440-h1564)
+
+### Important Links
+
+- Complete Lesson 1: **Welcome to Natural Language Processing** - and Lesson 2: **Udacity Support**:
+
+https://classroom.udacity.com/nanodegrees/nd892/parts/90059bfe-ada1-4b6b-9225-2f65f2b09b0d/modules/bba26048-3d80-41a7-a07b-857d8419829d/lessons/7d902ce2-4b40-477f-b505-b59517163439/concepts/a83edf41-de0f-4145-9f9f-4fc7e434f752
+
+
+https://classroom.udacity.com/nanodegrees/nd892/parts/90059bfe-ada1-4b6b-9225-2f65f2b09b0d/modules/bba26048-3d80-41a7-a07b-857d8419829d/lessons/d12d2ae6-d96e-4014-964a-cf6f3ed020ac/concepts/16c1aba8-6552-4e0e-95a2-1c72a260e807
+
+- Complete Lesson 3: **Intro to NLP**:
+
+https://classroom.udacity.com/nanodegrees/nd892/parts/90059bfe-ada1-4b6b-9225-2f65f2b09b0d/modules/bba26048-3d80-41a7-a07b-857d8419829d/lessons/e79dd351-a1d3-426d-a259-bf8cf9a26a98/concepts/100652de-12a9-448d-812d-e0fdba72c6fc
+
+- Complete Lesson 4: **Text Processing**:
+
+https://classroom.udacity.com/nanodegrees/nd892/parts/90059bfe-ada1-4b6b-9225-2f65f2b09b0d/modules/bba26048-3d80-41a7-a07b-857d8419829d/lessons/771cd35e-2e0a-4e2b-b6b0-3987885dc71e/concepts/14924ea9-7fd9-4eed-8933-5e6e3b25ac65
+
+- Finish Lesson 5: **Spam Classifier with Naive Bayes** up to the Project Overview:
+
+https://classroom.udacity.com/nanodegrees/nd892/parts/90059bfe-ada1-4b6b-9225-2f65f2b09b0d/modules/bba26048-3d80-41a7-a07b-857d8419829d/lessons/788c54ce-55de-4a1d-abae-0ad1ec6a0591/concepts/1998c35c-0f33-48e0-a5fe-d7b0382c801f
 
 ### 1.2.- Udacity Support
 
