@@ -342,6 +342,175 @@ Which of the following sentences are valid according to this grammar?
 
 https://classroom.udacity.com/courses/cs101/lessons/48299949/concepts/487192400923
 
+**Grammar**
+
+So in order to learn about programming, we need to learn new language. This will be a way to describe what we want the computer to do in a much more precise way than we could in a natural language like English. And it's a way to describe programs that the Python interpreter can run.
+
+One of the best ways to learn a programming language is to just try things.
+You can try that in the Python interpreter that's running in your browser.
+Let's, for example, try running 
+
+```
+2 + 2 +
+```
+
+In English, someone could probably guess that the value of `2 + 2 +` should be 4.
+
+In Python, when we try running this, we get an error. And the reason we get an error is that this is not actually part of the Python language. The Python interpreter only knows how to evaluate code that's part of the Python language.
+If you try to evaluate something that's not part of the Python language, it will give you and error.
+
+Errors look a bit scary, the way they print out. But there's nothing bad that can happen. It's perfectly okay to try running code. If it produces an error, that's one of the ways to learn about programming.
+
+The error we got here is what's called a `syntax error`. That means that what we tried to evaluate is not actually part of the Python language.
+
+Like English, Python has a grammar that defines what strings are in the language.
+In English, we can make lots of sentences that are not completely grammatical, and people still understand them, but there's some underlying grammar behind the language. 
+
+Those of you who are native English speakers, might have learned rules like this in what was once called grammar school. 
+Those of you who learned English as a second language, probably learned rules like this when you were learning English
+
+So, English has a rule that says you can make a sentence, by combining a subject with a verb, followed by an object:
+
+Almost every language has a rule sort of like this.
+The order of the subject and the verb and the object might be different, but there's a way to combine those three things to form a sentence.
+
+The subject could be a noun.
+The object could be a noun.
+And then each of these **parts of speech**
+Well, we have lots of things they could be.
+
+So a verb could be the word eat.
+A verb could also be the word like, and there are lots of other words that the verb could be.
+
+A noun could be the word Python, a noun could be the word cookies.
+
+The actual English grammar is of course, much larger and more complex than this.
+But we can still think of it as having rules like this that allow us to form sentences from the parts of speech that we know, from the words that make those parts of speech.
+
+The way we're writing grammars here is a notation called **Backus-Naur Form**. 
+And this was invented by John Backus
+
+So John Backus was the lead designer of the Fortran programming language back in the 1950s at IBM
+This was one of the first widely used programming languages.
+And the way they described the Fortran language was with lots of examples and text explaining what they meant.
+And this is a shot from the actual manual for the first version of Fortran.
+
+This works okay, many programmers were able to understand it and guess correctly what it meant.
+But was not nearly precise enough.
+And when it came time to design a later language which was the language called ALGOL, it became clear that this informal way of describing languages wasn't precise enough.
+And John Backus invented the notation that we're using here to describe languages
+
+```
+Sentence  ->  Subject  Verb  Object
+Subject   ->  Noun
+Object    ->  Noun
+Verb      ->  Eat
+Verb      ->  Like
+Noun      ->  I
+Noun      ->  Python
+Noun      ->  Cookies
+```
+
+**Backus Naur Form**
+
+The purpose of Backus-Naur Form is to be able to precisely describe exactly the language in a way that's very simple and very concise.
+
+So each rule has the form like this where on the left side there's a non-terminal.
+Sometimes they're written with brackets around them.
+
+There's an arrow, and then on the right side there's a replacement.
+The replacement can be anything, it can be a sequence of non-terminals.ç
+Sentence can be replaced with subject followed by verb followed by object.
+It can be 1 non-terminal, it can also be a terminal.
+
+What's special about the terminals is they never appear on the left side of a rule-
+Once we get a terminal we're done, we're finished; there's nothing else we can replace it with
+
+So all the rules have this form:
+
+```
+<Non-terminal> -> replacement
+```
+
+We can form a sentence by starting from some non-terminal; usually whichever one is written at the top left, in this case the one I called sentence
+And then by following the rules we keep replacing non-terminals with their replacements until we're left with only terminals.
+
+Here's an example starting from sentence using the grammar above.
+We can start with sentence.
+We only can have 1 rule to choose from where sentence is on the left side, so we're going to replace sentence with subject, verb, object
+
+```
+      sentence
+         |
+subject verb object
+```
+
+Now we have a lot of choices.
+We can pick any of the non-terminals we have left.
+Find a rule where that non-terminals is on the left side.
+
+We can pick any of the rules where it's on the left side and do the replacement.
+So I'm going to start with the left one. We'll pick subject.
+We only only have 1 replacement rule for subject.
+We can replace subjet with noun
+
+The others stay like they are, so we still have verb and we still have object.
+Now we can keep going
+
+```
+subject verb object
+   |
+ noun   verb object
+```
+
+We can pick the first one again.
+It's still a non-terminal, so we can still do replacements
+With noun we've got 3 choices.
+We can pick any one of those choices.
+
+I'm going to pick the first one. We'll replace noun with the terminal I
+Now we've got a terminal. We're done with that replacement
+Verb and object stay the same
+
+```
+noun  verb object
+ |
+ I
+```
+
+As a separate step we're going to find a rule that matches verb.
+We have 2 choices. I'll pick the second one and replace verb with like 
+
+```
+noun  verb object
+ |      |
+ I    like
+```
+
+We still have object.
+Object is a non-terminal, so we have to keep replacing it until we're done.
+We have 1 rule for object. We can replace object with noun
+
+```
+noun  verb  object
+ |      |     |
+ I    like   noun
+```
+
+Now we have 3 rules for noun. I'm going to pick the second rule and replace noun with Python
+What I've done here is what's called a derivation
+
+```
+ I    like   noun
+              |
+            Python
+```
+
+A derivation just means starting from some non-terminal, follow the rules to derive a sequence of terminals.
+We're done when we have only terminals left and we can derive a sentence in the grammar.
+In this case we produced the sentence I like python.
+But there are lots of other sentences we could have produced, starting from the same non-terminal if we pick different rules to follow
+
 #### Unstructured Text
 
 #### Counting Words
