@@ -325,6 +325,23 @@ Such violations of grammatical rules are reported as syntax errors
 SyntaxError: invalid syntax
 ```
 
+**QUIZ QUESTION**
+
+Here is a grammar, specified in a simple notation known as **Backus-Naur Form** or BNF [1]:
+
+```
+_S_ → 0 _S_ 0
+_S_ → 1 _S_ 1
+_S_ → 00
+_S_ → 11
+```
+
+Which of the following sentences are valid according to this grammar?
+
+[1] For a quick review, check out this brief segment on grammars from our Intro to Computer Science course.
+
+https://classroom.udacity.com/courses/cs101/lessons/48299949/concepts/487192400923
+
 #### Unstructured Text
 
 #### Counting Words
