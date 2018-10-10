@@ -513,11 +513,174 @@ But there are lots of other sentences we could have produced, starting from the 
 
 #### Unstructured Text
 
+The languages we use to communicate with each other also have defined grammatical rules.
+And indeed, in some situations we use simple structured sentences, but for the most part human discourse is complex and unstructured.
+
+Despite that, we seem to be really good at understanding each other and even ambiguities are welcome to a certain extent.
+
+So, what can computers do to make sense of unstructured text?
+Here are some preliminary ideas:
+
+PROCESS WORDS & PHRASES
+- KEYWORDS 
+- PARTS OF SPEECH
+- NAMED ENTITIES
+- DATES & QUANTITIES
+
+PARSE SENTENCES
+- STATEMENTS
+- QUESTIONS
+- INSTRUCTIONS
+
+ANALYZE DOCUMENTS
+- FREQUENT & RARE WORDS
+- TONE & SENTIMENT
+- DOCUMENT CLUSTERING
+
+You can imagine that building on top of these ideas, computers can do a whole lot with unstructured text even if they cannot understand it like us
+
+**QUIZ QUESTION**
+
+Let's see if you can identify parts of speech! Here is a sample English sentence:
+
+```
+She works at IBM.
+```
+
+For each word in the sentence, label it with the correct part of speech. Here a *named entity* is *essentially* a *proper noun.*
+
+She -> `pronoun`
+works -> `verb`
+at -> `preposition`
+IBM -> `named entity` 
+
 #### Counting Words
+
+Let's implement a simple function that is often used in Natural Language Processing: Counting word frequencies.
+
+Consider this passage of text:
+
+```
+As I was waiting, a man came out of a side room, and at a glance I was sure he must be Long John. His left leg was cut off close by the hip, and under the left shoulder he carried a crutch, which he managed with wonderful dexterity, hopping about upon it like a bird. He was very tall and strong, with a face as big as a ham—plain and pale, but intelligent and smiling. Indeed, he seemed in the most cheerful spirits, whistling as he moved about among the tables, with a merry word or a slap on the shoulder for the more favoured of his guests.
+```
+
+*— Excerpt from Treasure Island, by Robert Louis Stevenson.*
+
+In the following coding exercise, we have provided code to load the text from a file, call the function `count_words()` to obtain word counts (which you need to implement), and print the 10 most common and least common unique words.
+
+Complete the portions marked as TODO to count how many times each unique word occurs in the text.
+
+
+`input.txt`
+
+```
+As I was waiting, a man came out of a side room, and at a glance I was sure he must be Long John. His left leg was cut off close by the hip, and under the left shoulder he carried a crutch, which he managed with wonderful dexterity, hopping about upon it like a bird. He was very tall and strong, with a face as big as a ham—plain and pale, but intelligent and smiling. Indeed, he seemed in the most cheerful spirits, whistling as he moved about among the tables, with a merry word or a slap on the shoulder for the more favoured of his guests.
+```
+
+`count_words.py`
+
+```python
+"""Count words."""
+
+def count_words(text):
+    """Count how many times each unique word occurs in text."""
+    counts = dict()  # dictionary of { <word>: <count> } pairs to return
+    
+    # TODO: Convert to lowercase
+    
+    # TODO: Split text into tokens (words), leaving out punctuation
+    # (Hint: Use regex to split on non-alphanumeric characters)
+    
+    # TODO: Aggregate word counts using a dictionary
+    
+    return counts
+
+
+def test_run():
+    with open("input.txt", "r") as f:
+        text = f.read()
+        counts = count_words(text)
+        sorted_counts = sorted(counts.items(), key=lambda pair: pair[1], reverse=True)
+        
+        print("10 most common words:\nWord\tCount")
+        for word, count in sorted_counts[:10]:
+            print("{}\t{}".format(word, count))
+        
+        print("\n10 least common words:\nWord\tCount")
+        for word, count in sorted_counts[-10:]:
+            print("{}\t{}".format(word, count))
+
+
+if __name__ == "__main__":
+    test_run()
+
+```
 
 #### Context Is Everything
 
+So what is stopping computers from becoming as capable as humans in understanding natural language?
+Part of the problem lies in the variability and the complexity of our sentences
+
+Consider this excerpt from a movie review
+
+"""
+I was lured to see this on the promised of a `smart witty slice of old fashioned fun` and intrigue.
+`I was conned`.
+"""
+
+Although it starts with some potentially positive words it turns out to be strongly negative review
+Sentences like this might be somewhat entertaining for us but computers tend to make mistakes when trying to analyze them
+
+But there is a bigger challenge that makes NLP harder than you think
+Take a look at this sentence
+
+"""
+The sofa didn't fit through the door because `it` was too narrow
+"""
+
+What does `it` refer to?
+Clearly `it` refers to the door
+
+Now consider a slight variation of this sentence
+
+"""
+The sofa didn't fit through the door because `it` was too `wide`
+"""
+
+What does `it` refer to in this case?
+Here it's the sofa. Think about it
+
+To understand the proper meaning of `semantics` of the sentence you implicitly applied your knowledge about the physical world 
+That wide things don't fit through narrow things
+
+You may have experienced a similar situation before
+You can imagine that there are countless other scenarios in which some knowledge or `context` is indispensable for correctly understanding what is being said
+
+```
+Contextual Dependence
+
+Can you think of a similar sentence, in English or your own native language, where some contextual or background knowledge is needed to understand the intended meaning?
+```
+
 #### NLP and Pipelines
+
+Natural language processing is one of the fastest growing fields in the world
+NLP is making its way into a number of products and services that we use every day
+
+Let's begin with an overview of how to design an end-end NLP pipeline
+
+You start with raw text in whatever form it is available, 
+process it, 
+extract relevant features,
+and build models to accomplish various NLP tasks
+
+Now that I think about it,
+that is kind of like refining crude oil
+
+Anyways, you'll learn how these different stages in the pipeline depend on each other
+You'll also learn how to make design decisions,
+how to choose existing libraries,
+and tools to perform each step
 
 #### How NLP Pipelines Work
 
