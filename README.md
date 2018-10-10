@@ -623,10 +623,8 @@ Part of the problem lies in the variability and the complexity of our sentences
 
 Consider this excerpt from a movie review
 
-- "
-I was lured to see this on the promised of a `smart witty slice of old fashioned fun` and intrigue.
-`I was conned`.
-"
+- " I was lured to see this on the promised of a `smart witty slice of old fashioned fun` and intrigue.
+`I was conned`. "
 
 Although it starts with some potentially positive words it turns out to be strongly negative review
 Sentences like this might be somewhat entertaining for us but computers tend to make mistakes when trying to analyze them
@@ -634,18 +632,14 @@ Sentences like this might be somewhat entertaining for us but computers tend to 
 But there is a bigger challenge that makes NLP harder than you think
 Take a look at this sentence
 
-- "
-The sofa didn't fit through the door because `it` was too narrow
-"
+- " The sofa didn't fit through the door because `it` was too narrow "
 
 What does `it` refer to?
 Clearly `it` refers to the door
 
 Now consider a slight variation of this sentence
 
-- "
-The sofa didn't fit through the door because `it` was too `wide`
-"
+- " The sofa didn't fit through the door because `it` was too `wide` "
 
 What does `it` refer to in this case?
 Here it's the sofa. Think about it
