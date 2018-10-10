@@ -623,10 +623,10 @@ Part of the problem lies in the variability and the complexity of our sentences
 
 Consider this excerpt from a movie review
 
-"""
+"
 I was lured to see this on the promised of a `smart witty slice of old fashioned fun` and intrigue.
 `I was conned`.
-"""
+"
 
 Although it starts with some potentially positive words it turns out to be strongly negative review
 Sentences like this might be somewhat entertaining for us but computers tend to make mistakes when trying to analyze them
@@ -634,18 +634,18 @@ Sentences like this might be somewhat entertaining for us but computers tend to 
 But there is a bigger challenge that makes NLP harder than you think
 Take a look at this sentence
 
-"""
+"
 The sofa didn't fit through the door because `it` was too narrow
-"""
+"
 
 What does `it` refer to?
 Clearly `it` refers to the door
 
 Now consider a slight variation of this sentence
 
-"""
+"
 The sofa didn't fit through the door because `it` was too `wide`
-"""
+"
 
 What does `it` refer to in this case?
 Here it's the sofa. Think about it
@@ -675,9 +675,9 @@ extract relevant features,
 and build models to accomplish various NLP tasks
 
 Now that I think about it,
-that is kind of like refining crude oil
+that is kind of like refining crude oil.
 
-Anyways, you'll learn how these different stages in the pipeline depend on each other
+Anyways, you'll learn how these different stages in the pipeline depend on each other.
 You'll also learn how to make design decisions,
 how to choose existing libraries,
 and tools to perform each step
