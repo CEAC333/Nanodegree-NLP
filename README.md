@@ -226,7 +226,93 @@ https://classroom.udacity.com/nanodegrees/nd892/parts/90059bfe-ada1-4b6b-9225-2f
 
 https://classroom.udacity.com/nanodegrees/nd892/parts/90059bfe-ada1-4b6b-9225-2f65f2b09b0d/modules/bba26048-3d80-41a7-a07b-857d8419829d/lessons/788c54ce-55de-4a1d-abae-0ad1ec6a0591/concepts/1998c35c-0f33-48e0-a5fe-d7b0382c801f
 
-### 1.2.- Udacity Support
+### 1.2.- Get Help from Peers and Mentors
+
+#### 1.2.1.- What It Takes
+
+To graduate, you need to pass every project.
+
+The videos, text lessons and quizzes are recommended but optional.
+
+We know from survey and behavioral data that graduating depends primarily on your commitment and your persistence.
+
+But at some point, you will get stuck. Doubt can set in.
+
+What you choose to do when this happens is what separates successful online learners from others.
+
+Don’t panic. Don’t quit. Be patient, and work the problem.
+
+Remember that you will encounter many of the same problems as everyone else.
+
+We are here to help, and so are your classmates.
+
+When you are stuck, or looking for encouragement, you’ll find Udacity mentors and other students pushing you to graduation.
+
+The most important feedback you get from mentors will be directly from your project reviews.
+
+You will also find mentors, classmates and alumni on two platforms to get unblocked fast: Knowledge for searchable, upvoted Q&A, and Student Hub for real time collaboration.
+
+#### 1.2.2.- Reviews
+
+The most important feedback you receive from mentors at Udacity will be reviews of your project submissions.
+
+Projects are key milestones in your Nanodegree with detailed requirements and instructions, and you can submit them from the classroom for a review.
+
+We try to return your review within 24 hours by email.
+
+The mentor will comment on which requirements you passed or failed line-by-line, and provide personalized suggestions for improvement or resources for further learning.
+
+You may re-submit the project until you pass all requirements.
+
+Students tell us they find project reviews from experts to be the most helpful component of their learning.
+
+Udacity mentors work hard to help you improve - with a 4.9 average rating for over 2k projects a day.
+
+More than 95% of students who submit a project eventually pass. The secret is to try and never give up!
+
+#### 1.2.3.- Knowledge
+
+Knowledge is our platform for asked and answered questions about projects and content, supported by Udacity mentors, other students and alumni .
+
+
+If you have a question, search for it here. It may be answered, which makes searching first the fastest way to get unstuck.
+
+If you don't see your question, ask it here. You are likely to get an answer within 24 hours and help future students with the same problem.
+
+
+We see our most successful students learning from helping others.
+
+If you see a question and know the answer, please answer!
+
+You are helping another student get unstuck, and every future student who encounters the same problem.
+
+You will get an email alerting you to the 🎉and 🙏comments from happy students.
+
+
+We display search results and answers, and moderate posts in Knowledge based on how useful they are.
+
+Our goal is for all content on Knowledge to be structured, searchable and useful to other students.
+
+When you use Knowledge, please remember to upvote or downvote questions and answers, and help make it as useful as possible for others.
+
+#### 1.2.4.- Student Hub
+
+Student Hub is our real time collaboration platform where you can work with peers and mentors.
+
+
+You will find Community rooms with other students and alumni.
+
+
+And Guided Study rooms for each project, with Udacity mentors who offer guidance and answer questions.
+
+
+We have an amazing team of mentors who work hard to help you pass each project and they are incentivized for you to succeed.
+
+Udacity mentors typically respond within 24 hours. However they live all over the world and usually have active careers in industry, so expect that response times may vary.
+
+Check out Student Hub to say hello to your classmates and mentors.
+
+### 1.3.- Udacity Support
 
 There are several ways in which you will receive support during the program from Udacity's network of Reviewers, as well as your fellow students.
 
@@ -253,9 +339,9 @@ https://waffle.io/udacity/nlpnd-waffle-issues
 
 If you find an error, check there to see if it has already been filed. If it hasn't, you can file an issue by clicking on the "Add issue" button, adding a title, and entering a description in the details (you will need a GitHub account for this). Links and screenshots, if available, are always appreciated!
 
-### 1.3.- Intro to NLP
+### 1.4.- Intro to NLP
 
-#### Introducing Arpan
+#### 1.4.1.- Introducing Arpan
 
 Our first section will be taught by Arpan Chakraborty. Arpan has a Ph.D. in Computer Science and for several years, has taught at Udacity and at Georgia Tech.
 
@@ -269,7 +355,7 @@ This text is first processed using some simple transformations such as:
 You need to do this before performing any other analysis or training complex models.
 This stage may sound simple but you have to be careful about how you process your raw text, it may affect the results you obtain further down the line.
 
-#### NLP Overview
+#### 1.4.2.- NLP Overview
 
 Language is an important medium for human communication; it allows us to convey information, express our ideas, and give instructions to others
 
@@ -287,7 +373,7 @@ Yet, computers are still lagging behind. No doubt, we have made some incredible 
 In this lesson you will not only get to know more about the applications and challenges in NLP
 You will learn how to design an intelligent application that uses NLP techniques and deploy it on a scalable platform
 
-#### Structured Languages
+#### 1.4.3.- Structured Languages
 
 What makes it so hard for computers to understand us?
 
@@ -312,7 +398,7 @@ WHERE name LIKE 'A%'
 We are asking the database to return the names and e-mail addresses of all users whose names begin with an A.
 These languages are designed to be as unambiguous as possible and are suitable for computers to process.
 
-#### Grammar
+#### 1.4.4.- Grammar
 
 Structured languages are easy to parse and understand for computer because they are defined by a strict set of rules or grammar.
 There are standard forms of expressing such grammars and algorithms that can parse properly formed statements to understand exactly what is meant.
@@ -511,7 +597,7 @@ We're done when we have only terminals left and we can derive a sentence in the 
 In this case we produced the sentence I like python.
 But there are lots of other sentences we could have produced, starting from the same non-terminal if we pick different rules to follow
 
-#### Unstructured Text
+#### 1.4.5.- Unstructured Text
 
 The languages we use to communicate with each other also have defined grammatical rules.
 And indeed, in some situations we use simple structured sentences, but for the most part human discourse is complex and unstructured.
@@ -554,7 +640,7 @@ works -> `verb`
 at -> `preposition`
 IBM -> `named entity` 
 
-#### Counting Words
+#### 1.4.6.- Counting Words
 
 Let's implement a simple function that is often used in Natural Language Processing: Counting word frequencies.
 
@@ -616,7 +702,7 @@ if __name__ == "__main__":
 
 ```
 
-#### Context Is Everything
+#### 1.4.7.- Context Is Everything
 
 So what is stopping computers from becoming as capable as humans in understanding natural language?
 Part of the problem lies in the variability and the complexity of our sentences
@@ -656,7 +742,7 @@ Contextual Dependence
 Can you think of a similar sentence, in English or your own native language, where some contextual or background knowledge is needed to understand the intended meaning?
 ```
 
-#### NLP and Pipelines
+#### 1.4.8.- NLP and Pipelines
 
 Natural language processing is one of the fastest growing fields in the world
 NLP is making its way into a number of products and services that we use every day
@@ -676,22 +762,538 @@ You'll also learn how to make design decisions,
 how to choose existing libraries,
 and tools to perform each step
 
-#### How NLP Pipelines Work
+#### 1.4.9.- How NLP Pipelines Work
 
-#### Text Processing
+#### 1.4.10.- Text Processing
 
-#### Feature Extraction
+#### 1.4.11.- Feature Extraction
 
-#### Modeling
+#### 1.4.12.- Modeling
 
-### 1.4.- Text Processing
 
-### 1.5.- Spam Classifier with Naive Bayes
 
-### 1.6.- Part of Speech Tagging with HMMs
 
-### Project - Part of Speech Tagging
+### 1.5.- Text Processing
+
+#### 1.5.1.- Text Processing
+
+#### 1.5.2.- Coding Exercises
+
+#### 1.5.3.- Introduction to GPU Workspaces
+
+#### 1.5.4.- Workspaces: Best Practices
+
+#### 1.5.5.- Workspace
+
+#### 1.5.6.- Capturing Text Data
+
+#### 1.5.7.- Cleaning
+
+#### 1.5.8.- Normalization
+
+#### 1.5.9.- Tokenization
+
+#### 1.5.10.- Stop Word Removal
+
+#### 1.5.11.- Part-of-Speech Tagging
+
+#### 1.5.12.- Named Entity Recognition
+
+#### 1.5.13.- Stemming and Lemmanization
+
+#### 1.5.14.- Summary
+
+
+
+
+### 1.6.- Spam Classifier with Naive Bayes
+
+#### 1.6.1.- Intro
+
+#### 1.6.2.- Guess the Person
+
+#### 1.6.3.- Known and Inferred
+
+#### 1.6.4.- Guess the Person Now
+
+#### 1.6.5.- Bayes Theorem
+
+#### 1.6.6.- Quiz: False Positives
+
+#### 1.6.7.- Solution: False Positives
+
+#### 1.6.8.- Bayesian Learning 1
+
+#### 1.6.9.- Bayesian Learning 2
+
+#### 1.6.10.- Bayesian Learning 3
+
+#### 1.6.11.- Naive Bayes Algorithm 1
+
+#### 1.6.12.- Naive Bayes Algorithm 2
+
+#### 1.6.13.- Building a Spam Classifier
+
+#### 1.6.14.- Project
+
+#### 1.6.15.- Spam Classifier - Workspace
+
+#### 1.6.16.- Outro
+
+
+
+
+### 1.7.- Part of Speech Tagging with HMMs
+
+#### 1.7.1.- Intro
+
+#### 1.7.2.- Part of Speech Tagging
+
+#### 1.7.3.- Lookup Table
+
+#### 1.7.4.- Bigrams
+
+#### 1.7.5.- Whem bigrams won't work
+
+#### 1.7.6.- Hidden Markov Models
+
+#### 1.7.7.- Quiz: How many paths?
+
+#### 1.7.8.- Solution: How many paths
+
+#### 1.7.9.- Quiz: How many paths now?
+
+#### 1.7.10.- Quiz: Which path is more likely?
+
+#### 1.7.11.- Solution: Which path is more likely?
+
+#### 1.7.12.- Viterbi Algorithm Idea
+
+#### 1.7.13.- Viterbi Algorithm
+
+#### 1.7.14.- Further Reading
+
+#### 1.7.15.- Outro
+
+
+
+
+### 1.8.- Project - Part of Speech Tagging
+
+#### 1.8.1.- Lesson Plan: Week 3
+
+#### 1.8.2.- Introduction
+
+#### 1.8.3.- Workspace: Part of Speech Tagging
+
+#### 1.8.4.- Proyecto: Part of Speech Tagging
+
+
+
+
+### 1.9.- (Optional) IBM Watson Bookworm Lab
+
+#### 1.9.1.- Overview
+
+#### 1.9.2.- Getting Started
+
+#### 1.9.3.- Tasks
+
+#### 1.9.4.- Workspace: Bookworm
+
+
+
+
+### 1.10.- Jobs in NLP
+
+#### 1.10.1.- Jobs in NLP
+
+#### 1.10.2.- Meet the Careers Team
+
+#### 1.10.3.- Access Your Career Portal
+
+#### 1.10.4.- Your Udacity Professional Profile
+
+
+
+
+### 1.11.- Project - Optimize Your Github Profile
+
+#### 1.11.1.- Prove Your Skills With Github
+
+#### 1.11.2.- Introduction
+
+#### 1.11.3.- Github profile important terms
+
+#### 1.11.4.- Good Github repository
+
+#### 1.11.5.- Interview with Art - Part 1
+
+#### 1.11.6.- Quiz: Identify fixes for example "bad" profile
+
+#### 1.11.7.- Quick Fixes #1
+
+#### 1.11.8.- Quiz: Quick Fixes #2
+
+#### 1.11.9.- Writing READMEs with Walter
+
+#### 1.11.10.- Interview with Art - Part 2
+
+#### 1.11.11.- Commit messages best practices
+
+#### 1.11.12.- Quiz: Reflect on your commit messages
+
+#### 1.11.13.- Participating in open source projects
+
+#### 1.11.14.- Interview with Art - Part 3
+
+#### 1.11.15.- Participating in open source projects 2
+
+#### 1.11.16.- Quiz: Starring interesting repositories
+
+#### 1.11.17.- Next Steps
+
+#### 1.11.18.- Proyecto: Optimize Your Github Profile
+
+
+
 
 ## 2.- Computing with Natural Language
 
+
+
+
+### 2.1.- Feature extraction and embeddings
+
+#### 2.1.1.- Feature Extraction
+
+#### 2.1.2.- Bag of Words
+
+#### 2.1.3.- TF-IDF
+
+#### 2.1.4.- One-Hot Encoding
+
+#### 2.1.5.- Word Embeddings
+
+#### 2.1.6.- Word2Vec
+
+#### 2.1.7.- GloVe
+
+#### 2.1.8.- Embeddings for Deep Learning
+
+#### 2.1.9.- t-SNE
+
+#### 2.1.10.- Summary
+
+
+
+
+### 2.2.- Topic Modeling
+
+#### 2.2.1.- Intro
+
+#### 2.2.2.- References
+
+#### 2.2.3.- Bag of Words
+
+#### 2.2.4.- Latent Variables
+
+#### 2.2.5.- Matrix Multiplication
+
+#### 2.2.6.- Matrices
+
+#### 2.2.7.- Quiz: Picking Topics
+
+#### 2.2.8.- Solution: Picking Topics
+
+#### 2.2.9.- Beta Distributions
+
+#### 2.2.10.- Dirichlet Distributions
+
+#### 2.2.11.- Latent Dirichlet Allocation
+
+#### 2.2.12.- Sample a Topic
+
+#### 2.2.13.- Sample a Word
+
+#### 2.2.14.- Combining the Models
+
+#### 2.2.15.- Outro
+
+#### 2.2.16.- Notebook: Topic Modeling
+
+#### 2.2.17.- [SOLUTION] Topic Modeling
+
+#### 2.2.18.- Next Steps
+
+
+
+
+### 2.3.- Sentiment Analysis
+
+#### 2.3.1.- Intro
+
+#### 2.3.2.- Sentiment Analysis with a Regular Classifier
+
+#### 2.3.3.- Notebook: Sentiment Analysis with a regular classifier
+
+#### 2.3.4.- [SOLUTION] Sentiment Analysis with a regular clas
+
+#### 2.3.5.- Sentiment Analysis with RNN
+
+#### 2.3.6.- Notebook: Sentiment Analysis with an RNN
+
+#### 2.3.7.- [SOLUTION] Sentiment Analysis with an RNN
+
+#### 2.3.8.- Optional Material
+
+#### 2.3.9.- Outro
+
+
+
+
+### 2.4.- Sequence to Sequence
+
+#### 2.4.1.- Introducing Jay Alammar
+
+#### 2.4.2.- Previous Material
+
+#### 2.4.3.- Jay Introduction
+
+#### 2.4.4.- Applications
+
+#### 2.4.5.- Architectures
+
+#### 2.4.6.- Architectures with More Depth
+
+#### 2.4.7.- Outro
+
+
+
+
+### 2.5.- Deep Learning Attention
+
+#### 2.5.1.- Introduction to Attention
+
+#### 2.5.2.- Sequence to Sequence Recap
+
+#### 2.5.3.- Encoding - Attention Overview
+
+#### 2.5.4.- Decoding - Attention Overview
+
+#### 2.5.5.- Quiz: Attention Overview
+
+#### 2.5.6.- Attention Encoder
+
+#### 2.5.7.- Attention Decoder
+
+#### 2.5.8.- Quiz: Attention Encoder & Decoder
+
+#### 2.5.9.- Bahdanau and Luong Attention
+
+#### 2.5.10.- Multiplicative Attention
+
+#### 2.5.11.- Additive Attention
+
+#### 2.5.12.- Quiz: Additive and Multiplicative Attention
+
+#### 2.5.13.- Computer Vision Applications
+
+#### 2.5.14.- NLP Application: Google Neural Machine Translation
+
+#### 2.5.15.- Other Attention Methods
+
+#### 2.5.16.- The Transformer and Self-Attention
+
+#### 2.5.17.- Notebook: Attention Basics
+
+#### 2.5.18.- [SOLUTION] Attention Basics
+
+#### 2.5.19.- Outro
+
+
+
+
+### 2.6.- RNN Keras Lab
+
+#### 2.6.1.- Intro
+
+#### 2.6.2.- Machine Translation
+
+#### 2.6.3.- Deciphering Code with character-level RNNs
+
+#### 2.6.4.- [SOLUTION] Deciphering Code with character-level RNNs
+
+#### 2.6.5.- Congrulations!
+
+
+
+
+### 2.7.- Cloud Computing Setup Instructions
+
+#### 2.7.1.- Overview
+
+#### 2.7.2.- Create an AWS Account
+
+#### 2.7.3.- Get Access to GPU Instances
+
+#### 2.7.4.- Launch Your Instance
+
+#### 2.7.5.- Remotely Connecting to Your Instance
+
+
+
+
+### 2.8.- Machine Translation
+
+#### 2.8.1.- Introduction to GPU Workspaces
+
+#### 2.8.2.- Workspaces: Best Practices
+
+#### 2.8.3.- NLP Machine Translation Workspace
+
+#### 2.8.4.- Project: Machine Translation
+
+#### 2.8.5.- Project: Machine Translation
+
+
+
+
+### 2.9.- Strengthen Your Online Presence Using Linkedin
+
+#### 2.9.1.- Get Opportunities with Linkedin
+
+#### 2.9.2.- Use Your Story to Stand Out
+
+#### 2.9.3.- Why Use an Elevator Pitch
+
+#### 2.9.4.- Create Your Elevator Pitch
+
+#### 2.9.5.- Use Your Elevator Pitch on Linkedin
+
+#### 2.9.6.- Create Your Profile With SEO in Mind
+
+#### 2.9.7.- Profile Essentials
+
+#### 2.9.8.- Work Experiences & Accomplishments
+
+#### 2.9.9.- Build and Strengthen Your Network
+
+#### 2.9.10.- Reaching Out on Linkedin
+
+#### 2.9.11.- Boost Your Visibility
+
+#### 2.9.12.- Up Next
+
+#### 2.9.13.- Project: Improve Your Linkedin Profile
+
+
+
+
 ## 3.- Communicating with Natural Language
+
+### 3.1.- Intro to Voice User Interfaces
+
+#### 3.1.1.- Welcome to Voice User Interfaces!
+
+#### 3.1.2.- VUI Overview
+
+#### 3.1.3.- VUI Applications
+
+
+
+
+### 3.2.- (Optional) Alexa History Skill
+
+#### 3.2.1.- Overview
+
+#### 3.2.2.- Getting Started
+
+#### 3.2.3.- Tasks
+
+#### 3.2.4.- Deploying Your Skill
+
+
+
+
+### 3.3.- Speech Recognition
+
+#### 3.3.1.- Intro
+
+#### 3.3.2.- Challenges in ASR
+
+#### 3.3.3.- Signal Analysis
+
+#### 3.3.4.- References: Signal Analysis
+
+#### 3.3.5.- Quiz: FFT
+
+#### 3.3.6.- Feature Extraction with MFCC
+
+#### 3.3.7.- References: Feature Extraction
+
+#### 3.3.8.- Quiz: MFCC
+
+#### 3.3.9.- Phonetics
+
+#### 3.3.10.- References: Phonetics
+
+#### 3.3.11.- Quiz: Phonetics
+
+#### 3.3.12.- Voice Data Lab Introduction
+
+#### 3.3.13.- Lab: Voice Data
+
+#### 3.3.14.- Acoustic Models and the Trouble with Time
+
+#### 3.3.15.- HMMs in Speech Recognition
+
+#### 3.3.16.- Language Models
+
+#### 3.3.17.- N-Grams
+
+#### 3.3.18.- Quiz: N-Grams
+
+#### 3.3.19.- References: Traditional ASR
+
+#### 3.3.20.- A New Paradigm
+
+#### 3.3.21.- Deep Neural Networks as Speech Models
+
+#### 3.3.22.- Connectionist Tempora Classification (CTC)
+
+#### 3.3.23.- References: Deep Neurall Network ASR
+
+#### 3.3.24.- Outro
+
+
+
+
+### 3.4.- Project: DNN Speech Recognizer
+
+#### 3.4.1.- Overview
+
+#### 3.4.2.- Introduction to GPU Workspaces
+
+#### 3.4.3.- Workspaces: Best Practices
+
+#### 3.4.4.- Tasks
+
+#### 3.4.5.- VUI Speech Recognizer Workspace
+
+#### 3.4.6.- Project: DNN Speech Recognizer
+
+
+
+
+## 4.- Extra
+
+### 4.1.- Recurrent Neural Networks
+
+### 4.2.- Keras
+
+### 4.3.- Sentiment Analysis Extras
+
+### 4.4.- TensorFlow
+
+### 4.5.- Embeddings and Word2Vec
