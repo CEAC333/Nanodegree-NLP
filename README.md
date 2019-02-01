@@ -764,28 +764,301 @@ and tools to perform each step
 
 #### 1.4.9.- How NLP Pipelines Work
 
+**NLP Pipeline**
+
+- Text Processing
+- Feature Extraction
+- Modeling
+
+Each stage transforms text in some way and produces a result that the next stage needs.
+
+For example, the goal of text processing is to take raw input text, clean it. normalize it, and convert it into a form that is suitable for feature extraction.
+
+Similarly, the next stage needs to extract and produce feature representations that are appropriate for that type of model you're planning to use and the NLP task you're trying to accomplish.
+
+When you're building such a pipeline, your workflow may not be perfectly linear.
+
+Let's say, you spend some time implementing text processing functions, then make some simple feature extractors, and then design a baseline statistical model.
+
+But then, maybe you are not happy with the results.
+
+So you go back and rethink what features you need, and that in turn, can make you change your processing routines. 
+
+Keep in mind that this is a very simplified view of natural language processing.
+
+Your application may require additional steps.
+
 #### 1.4.10.- Text Processing
+
+**Why do we need to process text?**
+
+Websites are a common source of textual information.
+
+For the porpuses of natural language processing, you would typically want to get rid of all or most of thee HTML tags, and retain only plain text. 
+
+You can also remove or set aside any URLs or other items not relevant to your task.
+
+The Web is probably the most common and fastest growing source of textual content. But you may also need to consume PDFs, Word documents or other file formats.
+
+Or your raw input may even come from a speech recognition system of from a book scan using OCR.
+
+Some knowledge or the source medium can help you properly handle the input.
+
+In the end, your goal is to extract plain text that is free of any source specific markers or constructs that are not relevant to your task.
+
+Once you have obtained plain text, some further processing may be necessary.
+
+For instance, capitalization doesn't usually change the meaning of a word. We can conver all the words to the same case so that they're not treated differently.
+
+Punctuation marks that we use to indicate pauses, etc. can also be removed.
+
+Some common words in a language often help provide structure, but don't add much meaning. For example, *a*, *and*, *the*, *of*, *are* *and* so on. Sometimes it's best to remove them if that helps reduce the complexity of the procedures you want to apply later. 
 
 #### 1.4.11.- Feature Extraction
 
+We now have clean normalized text. Can we feed this into a statistical or machine learning model? Not quite. Let's see why.
+
+Text data is represented on modern computers using an encoding such as ASCII or Unicode that maps every character to a number. 
+
+Computer store and transmit these values as binary, zeros and ones. 
+These numbers also have an implicit ordering. 65 is less than 66 which is less than 67.
+But does that mean A is less than B, and B is less than C? No. In fact, that would be a incorrect assumption to make and might mislead our natural language processing algorithms.
+
+Moreover, individual characters don't carry much meaning at all. It is words that we should be concerned with, but computers don't have a standard representation for words.
+
+Yes, internally they are just sequences of ASCII or Unicode values but they don't quite capture the meanings or relationships between words.
+
+Compare this with how an image is represented in computer memory. Each pixel value contains the relative intensity of light at that spot in the image. For a color image, we keep one value per primary color; red, green, and blue. These values carry relevant information. Two pixels with similar values are perceptually similar. Therefore, it makes sense to directly use pixel values in a numerical model. Yes, some feature engineering may be necessary such as edge detection or filtering, but pixels are a good starting point. 
+
+So the question is, how do we come up with a similar representation for text data that we can use as features for modeling?
+
+The answer again depends on what kind of model you're using and what task you're trying to accomplish.
+
+If you want to use a graph based model to extract insights, you may want to represent your words as symbolic nodes with relationships between them like WordNet. 
+
+For statistical models however, you need some sort of numerical reepresentation. Even then, you have to think about the end goal. 
+
+If you're trying to perform a document level task, such as spam detection or sentiment analysis, you may want to use a per document representations such as bag-of-words or doc2vec.
+
+If you want to work with individual words and phrases such as for text generation or machine translation, you'll need a word level representation such as word2vec or glove.
+
+There are many ways of representing textual information, and it's only through practice that you can learn what you need for each problem.
+
 #### 1.4.12.- Modeling
 
+This includes designing a model, usually a statistical or a machine learning model, fitting its parameters to training data using an optimization procedure, and then using it to make predictions about unseen data.
 
+The nice thing about working with numerical features is that it allows you to utilize pretty much any machine learning model. This includes support vector machines, decision trees, neural networks, or any custom model of your choice.
 
+You could even combine multiple models to get better performance. How you utilize the model is up to you. You can deploy it as a web-based application, package it up into a handy mobile app, integrate it with other products, services, and so on. The possibilities are endless.
 
 ### 1.5.- Text Processing
 
 #### 1.5.1.- Text Processing
 
+In this lesson, you'll learn how to read text data from different sources and prepare it for feature extraction.
+
+You'll begin by cleaning it to remove irrelevant items, such as HTML tags.
+You will then normalize text by converting it into all lowercase, removing punctuations and extra spaces. 
+Next, you will split the text into words or tokens and remove words that are too common, also known as stop words.
+Finally, you will learn how to identify different parts of speech, named entities, and convert words into canonical forms using stemming and lemmatization.
+
+After going thorugh all these processing steps, your text may look very different, but it captures the essence of what was being conveyed in a form that is easier to work with. 
+
 #### 1.5.2.- Coding Exercises
+
+Coding exercises that accompany this lesson can be accessed in two ways. The easiest way is clicking next to open the project workspace in the classroom.
+
+You'll be using this workspace throughout this whole lesson, so we suggest that you open it in a different tab, while following along with the lessons. Also, we recommend you to save your work often in the workspace.
+
+However, if you want to run the Jupyter server on your own system, you can download the files from this GitHub repo: https://github.com/udacity/AIND-NLP
+
+1.- Clone the repo on your local machine.
+2.- Follow the instructions provided in README.md to setup your Python environment.
+3.- (Optional) Download all nltk data packages (10+GB), or get them later as needed.
+4.- Launch the notebook: jupyter notebook text_processing.ipynb
+
+Then follow along as you go through the lesson. Feel free to pause and experiment with the tools and libraries you're learning!
 
 #### 1.5.3.- Introduction to GPU Workspaces
 
+**Introduction**
+
+Udacity Workspaces with GPU support are available for some projects as an alternative to manually configuring your own remote server with GPU support. These workspaces provide a Jupyter notebook server directly in your browser. This lesson will briefly introduce the Workspaces interface.
+
+**Important Notes:**
+
+- Workspaces sessions are connections from your browser to a remote server. Each student has a limited number of GPU hours allocated on the servers (the allocation is significantly more than completing the projects is expected to take). There is currently no limit on the number of Workspace hours when GPU mode is disabled.
+
+- Workspace data stored in the user's home folder is preserved between sessions (and can be reset as needed, e.g., to get project updates).
+
+- **Only 3 gigabytes of data can be stored in the home folder.**
+
+- Workspace sessions are preserved if your connection drops or your browser window is closed, simply return to the classroom and re-open the workspace page; however, workspace sessions are automatically terminated after a period of inactivity. This will prevent you from leaving a session connection open and burning through your time allocation. (See the section on active connections below.)
+
+- The kernel state is preserved as long as the notebook session remains open, but it is not preserved if the session is closed. If you exit the notebook for more than half an hour and the session is closed, you will need to re-run any previously-run cells before continuing.
+
+**Overview**
+Workspaces interface
+The default workspaces interface
+
+When the workspace opens, you'll see the normal Jupyter file browser. From this interface you can open a notebook file, start a remote terminal session, enable the GPU, submit your project, or reset the workspace data, and more. Clicking the three bars in the top left corner above the Jupyter logo will toggle hiding the classroom lessons sidebar.
+
+**NOTE: You can always return to the file browser page from anywhere else in the workspace by clicking the Jupyter logo in the top left corner.**
+
+**Opening a notebook**
+
+Project notebook view
+View of the project notebook
+
+Clicking the name of a notebook (*.ipynb) file in the file list will open a standard Jupyter notebook view of the project. The notebook session will remain open as long as you are active, and will be automatically terminated after 30 minutes of inactivity.
+
+You can exit a notebook by clicking on the Jupyter logo in the top left corner.
+
+**NOTE: Notebooks continue to run in the background unless they are stopped. IF GPU MODE IS ACTIVE, IT WILL REMAIN ACTIVE AFTER CLOSING OR STOPPING A NOTEBOOK. YOU CAN ONLY STOP GPU MODE WITH THE GPU TOGGLE BUTTON. (See next section.)**
+
+**Enabling GPU Mode**
+Enabling GPU mode
+The GPU Toggle Button
+
+GPU Workspaces can also be run without time restrictions when the GPU mode is disabled. The "Enable"/"Disable" button (circled in red in the image) can be used to toggle GPU mode. **NOTE: Toggling GPU support may switch the physical server your session connects to, which can cause data loss UNLESS YOU CLICK THE SAVE BUTTON BEFORE TOGGLING GPU SUPPORT.**
+
+**ALWAYS SAVE YOUR CHANGES BEFORE TOGGLING GPU SUPPORT.**
+
+**Keeping Your Session Active**
+
+Workspaces automatically disconnect after 30 minutes of user inactivity—which means that workspaces can disconnect during long-running tasks (like training neural networks). We have provided a utility that can keep your workspace sessions active for these tasks. However, keep the following guidelines in mind:
+
+- Do not try to permanently hold the workspace session active when you do not have a process running (e.g., do not try to hold the session open in the background)—the limits are in place to preserve your GPU time allocation; there is no guarantee that you'll receive additional time if you exceed the limit.
+
+- Make sure that you save the results of the long running task to disk as soon as the task ends (e.g., checkpoint your model parameters for deep learning networks); otherwise the workspace will disconnect 30 minutes after the active process ends, and the results will be lost.
+
+The `workspace_utils.py` module (available here) includes an iterator wrapper called `keep_awake` and a context manager called `active_session` that can be used to maintain an active session during long-running processes. The two functions are equivalent, so use whichever fits better in your code. **NOTE:** The file may be incorrectly downloaded as `workspace-utils.py` (note the dash instead of an underscore in the filename). Make sure to correct the filename before uploading to your workspace; Python cannot import from file names including hyphens.
+
+Example using `keep_awake`:
+
+```python
+from workspace_utils import keep_awake
+
+for i in keep_awake(range(5)):  #anything that happens inside this loop will keep the workspace active
+    # do iteration with lots of work here
+```
+
+Example using `active_session`:
+
+```
+from workspace_utils import active_session
+
+with active_session():
+    # do long-running work here
+```
+
+**Submitting a Project**
+
+UI annotation for project submission button
+The Submit Project Button
+
+Some workspaces are able to directly submit projects on your behalf (i.e., you do not need to manually submit the project in the classroom). To submit your project, simply click the "Submit Project" button (circled in red in the above image).
+
+If you do not see the "Submit Project" button, then project submission is not enabled for that workspace. You will need to manually download your project files and submit them in the classroom.
+
+**NOTE: YOU MUST ENSURE THAT YOUR SUBMISSION INCLUDES ALL REQUIRED FILES BEFORE SUBMITTING -- INCLUDING ANY FILE CONVERSIONS (e.g., from ipynb to HTML)**
+
+**Opening a Terminal**
+The "new" menu
+The "New" menu button
+
+Jupyter workspaces support several views, including the file browser and notebook view already covered, as well as shell terminals. To open a terminal shell, click the "New" menu button at the top right of the file browser view and select "Terminal".
+
+**Terminals**
+Jupter terminal shell interface
+Jupyter terminal shell interface
+
+Terminals provide a full Bash shell that you can use to install or update software packages, fetch updates from github repositories, or run any other terminal commands. As with the notebook view, you can return to the file browser view by clicking on the Jupyter logo at the top left corner of the window.
+
+**NOTE: Your data & changes are persistent across workspace sessions. Any changes you make will need to be repeated if you later reset your workspace data.**
+
+**Resetting Data**
+Workspaces Menu Button
+The Menu Button
+
+The "Menu" button in the bottom left corner provides support for resetting your Workspaces. The "Refresh Workspace" button will refresh your session, which has no effect on the changes you've made in the workspace.
+
+The "Reset Data" button discards all changes and restores a clean copy of the workspace. Clicking the button will open a dialog that requires you to type "Reset data" in a confirmation dialog. **ALL OF YOUR DATA WILL BE LOST.**
+
+Resetting should only be required if Udacity makes changes to the project and you can't get them via `git pull`, or if you destroy the contents of the workspace. If you do need to reset your data, you are strongly encouraged to download a copy of your work from the file interface before clicking Reset Data.
+
 #### 1.5.4.- Workspaces: Best Practices
+
+**Best Practices**
+
+Follow the best practices outlined below to avoid common issues with Workspaces.
+
+* **Keep your home folder small** 
+
+**Your home folder (including subfolders) must be less than 2GB** or you may lose data when your session terminates. You may use directories outside of the home folder for more space, but only the contents of the home folder are persisted between sessions and submitted with your project. 
+
+**NOTE: Your home folder (including subfolders) must be less than 25 megabytes to submit as a project**. If the site becomes unresponsive when you try to submit your project, it is likely that your home folder is too large. You can check the size of your home folder by opening a terminal and running the command `du -h . | tail -1` You can use `ls` to list the files in your terminal and `rm` to remove unwanted files. (Search for both commands online to find example usage.)
+
+*  **What's the "home folder"?**
+"Home folder" refers to the directory where users files are stored (compared to locations where system files are stored, for example). (Ref. Wikipedia: home directory) In Workspaces, the home folder is `/home/workspace`. Any files in this folder or any subfolder are part of your home folder contents, which means they're saved between sessions and transferred automatically when you switch between CPU/GPU mode. 
+
+The folder `/tmp` is *not* in the home folder; files in any folder outside your home folder are **not** persisted between sessions or transferred between CPU/GPU mode. You can create a folder outside the home folder using the command `mkdir` from a terminal. For example you could create a temporary folder to store data using `mkdir -p /data` to create a folder at the root directory. You will need to recreate the folder and recreate any data inside every time you start a new Workspace session.
+
+* **Keeping your connection alive during long processes**
+Workspaces automatically disconnect when the connection is inactive for about 30 minutes, which includes inactivity while deep learning models are training. You can use the workspace_utils.py module here to keep your connection alive during training. The module provides a context manager and an iterator wrapper—see example use below. 
+
+**NOTE:** The script sometimes raises a connection error if the request is opened too frequently; just restart the jupyter kernel & run the cells again to reset the error. 
+
+**NOTE:** These scripts will keep your connection alive while the training process is running, but the workspace will still disconnect 30 minutes after the last notebook cell finishes. Modify the notebook cells to **save your work** at the end of the last cell or else you'll lose all progress when the workspace terminates.
+
+**Example using context manager:**
+
+```
+from workspace_utils import active_session
+
+with active_session():
+    # do long-running work here
+```
+
+**Example using iterator wrapper:**
+
+```
+from workspace_utils import keep_awake
+
+for i in keep_awake(range(5)):
+    # do iteration with lots of work here
+```
+
+* **Manage your GPU time**
+
+It is important to avoid wasting GPU time in Workspace projects that have GPU acceleration enabled. The benefits of GPU acceleration are most useful when evaluating deep learning models—especially during training. In most cases, you can build and test your model (including data pre-processing, defining model architecture, etc.) in CPU mode, then activate GPU mode to accelerate training.
+
+* **Handling "Out of Memory" errors**
+
+This issue isn't specific to Workspaces, but rather it is an apparent issue between Pytorch & Jupyter, where Jupyter reports "out of memory" after a cell crashes. Jupyter holds references to active objects as long as the kernel is running—including objects created before an error is raised. This can cause Jupyter to persist large objects in memory long after they are no longer required. The only known solution so far is to reset the kernel and run the notebook cells again.
 
 #### 1.5.5.- Workspace
 
 #### 1.5.6.- Capturing Text Data
+
+The processing stage begins with reading text data.
+
+Depending on your application, that can be from one of several sources.
+
+The simplest source is a plain text on your local machine. We can read it in using Python's built in file input mechanism.
+
+Text data may also be included as part of a larger database or table. 
+
+Here, we have a CSV file containing information about some news articles. We can read this in using pandas very easily. Pandas includes several useful string manipulation methods that can be appied to an entire column at once.
+
+For instance, converting all values to lowercase. 
+
+Sometimes, you may have to fetch data from an online reesource, such as a web service or API. 
+
+In this example, we use the requests library in Python to obtain a quote of the day from a simple API, but you could also obtain tweets, reviews, comments, whatever you would like to analyze. Most APIs return JSON or XML data, so you need to be aware of the structure in order to pull out the fields that you need. 
+
+Many data sets you will encounter have likely been fetched and preparedd by someone else using a similar procedure.
 
 #### 1.5.7.- Cleaning
 
